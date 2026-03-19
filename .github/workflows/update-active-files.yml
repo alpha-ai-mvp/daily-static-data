@@ -1,0 +1,58 @@
+name: Update Active Static Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Update mode"
+        required: true
+        default: "incremental"
+        type: choice
+        options:
+          - incremental
+          - full
+  schedule:
+    - cron: "0 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas fredapi requests
+
+      - name: Run updater
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          MODE: ${{ github.event.inputs.mode || 'incremental' }}
+        run: |
+          if [ "$MODE" = "full" ]; then
+            python update_active_files.py --full
+          else
+            python update_active_files.py --incremental
+          fi
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add volatility.csv general_rates_db_CreditSpreads.csv general_rates_db_InterestRates.csv general_borrowing_db_MortgageRates.csv sentiment.xls
+          git commit -m "chore: update active static data files"
+          git push

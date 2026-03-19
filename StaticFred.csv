@@ -1,0 +1,17 @@
+name_pk,category,fred_id,long_name,short_name,description
+US1M,yield_curve,DGS1MO,US 1M Treasury Yield,US 1M,US Treasury Securities
+US3M,yield_curve,DGS3MO,US 3M Treasury Yield,US 3M,US Treasury Securities
+US6M,yield_curve,DGS6MO,US 6M Treasury Yield,US 6M,US Treasury Securities
+US1Y,yield_curve,DGS1,US 1Y Treasury Yield,US 1Y,US Treasury Securities
+US2Y,yield_curve,DGS2,US 2Y Treasury Yield,US 2Y,US Treasury Securities
+US3Y,yield_curve,DGS3,US 3Y Treasury Yield,US 3Y,US Treasury Securities
+US5Y,yield_curve,DGS5,US 5Y Treasury Yield,US 5Y,US Treasury Securities
+US7Y,yield_curve,DGS7,US 7Y Treasury Yield,US 7Y,US Treasury Securities
+US10Y,yield_curve,DGS10,US 10Y Treasury Yield,US 10Y,US Treasury Securities
+US20Y,yield_curve,DGS20,US 20Y Treasury Yield,US 20Y,US Treasury Securities
+US30Y,yield_curve,DGS30,US 30Y Treasury Yield,US 30Y,US Treasury Securities
+VIX,volatility,VIXCLS,CBOE Volatility Index,VIX,CBOE Volatility Index
+S&P VIX 3m,volatility,VXVCLS,CBOE S&P 500 3-Month Volatility Index,S&P VIX 3m,CBOE S&P 500 3-Month Volatility Index
+NASDAQ 100 VIX,volatility,VXNCLS,US 6M Treasury Yield,NASDAQ 100 VIX,US Treasury Securities
+Russell 2k VIX,volatility,RVXCLS,CBOE Russell 2000 Volatility Index,Russell 2k VIX,CBOE Russell 2000 Volatility Index
+Dow IA VIX,volatility,VXDCLS,CBOE DJIA Volatility Index,Dow Jones IA VIX,CBOE DJIA Volatility Index

@@ -1,0 +1,52 @@
+﻿primary_key,fred_id,yahoo_id,database.table_insert,database.table_create,short_name,category_1,category_2,category_3,source,long_name
+sp_500,,^GSPC,general_equity_db.PriceEquityIndexUS,,S&P 500,Equity,US Equities,Large Cap,Yahoo Finance,S&P 500 Index
+nasdaq_composite,,^IXIC,general_equity_db.PriceEquityIndexUS,,Nasdaq Composite,Equity,US Equities,Large Cap,Yahoo Finance,Nasdaq Composite Index
+nasdaq_100,,^NDX,general_equity_db.PriceEquityIndexUS,,Nasdaq 100,Equity,US Equities,Large Cap,Yahoo Finance,Nasdaq-100 Index
+dow_jones_industrial_average,,^DJI,general_equity_db.PriceEquityIndexUS,,Dow Jones Industrial Average,Equity,US Equities,Large Cap,Yahoo Finance,Dow Jones Industrial Average
+russell_2000,,^RUT,general_equity_db.PriceEquityIndexUS,,Russell 2000,Equity,US Equities,Small Cap,Yahoo Finance,Russell 2000 Index
+dax,,^GDAXI,general_equity_db.PriceEquityIndexEurope,,Dax,Equity,Europe Equities,Large Cap,Yahoo Finance,DAX Performance Index
+ftse_100,,^FTSE,general_equity_db.PriceEquityIndexEurope,,Ftse 100,Equity,Europe Equities,Large Cap,Yahoo Finance,FTSE 100 Index
+cac_40,,^FCHI,general_equity_db.PriceEquityIndexEurope,,Cac 40,Equity,Europe Equities,Large Cap,Yahoo Finance,CAC 40 Index
+estx_50_preur,,^STOXX50E,general_equity_db.PriceEquityIndexEurope,,Estx 50 Pr.Eur,Equity,Europe Equities,Large Cap,Yahoo Finance,Euro Stoxx 50 Index
+surplusdeficit,FYFSD,,general_macro_db.Fiscal,,Surplus/Deficit,Macro,Fiscal,Budget,FRED,Federal Surplus or Deficit
+surplusdeficit_to_gdp,FYFSGDA188S,,general_macro_db.Fiscal,,Surplus/Deficit To GDP,Macro,Fiscal,Budget,FRED,Federal Surplus or Deficit as Percent of Gross Domestic Product
+total_public_debt,GFDEBTN,,general_macro_db.Fiscal,,Total Public Debt,Macro,Fiscal,National Debt,FRED,Total Public Debt (Federal Debt)
+total_public_debt_to_gdp,GFDEGDQ188S,,general_macro_db.Fiscal,,Total Public Debt To GDP,Macro,Fiscal,National Debt,FRED,Federal Debt: Total Public Debt as Percent of Gross Domestic Product
+interest_payments,A091RC1Q027SBEA,,general_macro_db.Fiscal,,Interest Payments,Macro,Fiscal,Funding Costs,FRED,Federal government current expenditures: Interest payments
+interest_payments_to_gdp,FYOIGDA188S,,general_macro_db.Fiscal,,Interest Payments To GDP,Macro,Fiscal,Funding Costs,FRED,Federal Outlays: Interest as Percent of Gross Domestic Product
+gdp_value,GDP,,general_macro_db.Growth,,GDP Value,Macro,Growth,GDP,FRED,Gross Domestic Product Value
+gdp_per_capita,A939RX0Q048SBEA,,general_macro_db.Growth,,GDP Per Capita,Macro,Growth,GDP,FRED,Gross Domestic Product per Capita Value
+gnp_value,GNP,,general_macro_db.Growth,,GNP Value,Macro,Growth,GDP,FRED,Gross Domestic National Value
+gnp_per_capita,A791RX0Q048SBEA,,general_macro_db.Growth,,GNP Per Capita,Macro,Growth,GDP,FRED,Gross National Product per Capita Value
+total_population,POPTHM,,general_macro_db.Population,,Total Population,Macro,Population,Population,FRED,Population Count
+cpi_index,CPIAUCSL,,general_macro_db.Inflation,,CPI Index,Macro,Inflation,Inflation,FRED,All Items in U.S. City Average
+core_cpi,CPILFESL,,general_macro_db.Inflation,,Core CPI,Macro,Inflation,Inflation,FRED,All Items Less Food and Energy in U.S. City Average
+pce_index,PCE,,general_macro_db.Inflation,,PCE Index,Macro,Inflation,Inflation,FRED,Personal Consumption Expenditures Price Index
+unemployment,UNRATE,,general_macro_db.Employment,,Unemployment Rate,Macro,Employment,Participation,FRED,Unemployment Rate
+wage_growth,CES0500000003,,general_macro_db.Employment,,Wage Growth,Macro,Employment,Wages,FRED,Average Hourly Earnings Total Private
+average_hours_worked,AWHNONAG,,general_macro_db.Employment,,Average Hours Worked,Macro,Employment,Wages,FRED,Average Weekly Hours Nonagricultural
+labor_force_participation,CIVPART,,general_macro_db.Employment,,Labor Force Participation Rate,Macro,Employment,Participation,FRED,Civilian Labor Force Participation Rate
+employmenttopopulation_ratio,EMRATIO,,general_macro_db.Employment,,Employment-To-Population Ratio,Macro,Employment,Participation,FRED,Employment-Population Ratio
+job_vacancy,JTSJOR,,general_macro_db.Employment,,Job Vacancy Rate,Macro,Employment,Participation,FRED,Job Openings Rate Nonfarm
+m2,M2SL,,general_macro_db.Monetary,,M2,Macro,Monetary,Money Supply,FRED,M2 Money Supply
+us_1m,DGS1MO,,general_rates_db.InterestRates,,US1M,Rates,Interest Rates,US Treasuries,FRED,US 1M Treasury Yield
+us_3m,DGS3MO,,general_rates_db.InterestRates,,US3M,Rates,Interest Rates,US Treasuries,FRED,US 3M Treasury Yield
+us_6m,DGS6MO,,general_rates_db.InterestRates,,US6M,Rates,Interest Rates,US Treasuries,FRED,US 6M Treasury Yield
+us_1y,DGS1,,general_rates_db.InterestRates,,US1Y,Rates,Interest Rates,US Treasuries,FRED,US 1Y Treasury Yield
+us_2y,DGS2,,general_rates_db.InterestRates,,US2Y,Rates,Interest Rates,US Treasuries,FRED,US 2Y Treasury Yield
+us_3y,DGS3,,general_rates_db.InterestRates,,US3Y,Rates,Interest Rates,US Treasuries,FRED,US 3Y Treasury Yield
+us_5y,DGS5,,general_rates_db.InterestRates,,US5Y,Rates,Interest Rates,US Treasuries,FRED,US 5Y Treasury Yield
+us_7y,DGS7,,general_rates_db.InterestRates,,US7Y,Rates,Interest Rates,US Treasuries,FRED,US 7Y Treasury Yield
+us_10y,DGS10,,general_rates_db.InterestRates,,US10Y,Rates,Interest Rates,US Treasuries,FRED,US 10Y Treasury Yield
+us_20y,DGS20,,general_rates_db.InterestRates,,US20Y,Rates,Interest Rates,US Treasuries,FRED,US 20Y Treasury Yield
+us_30y,DGS30,,general_rates_db.InterestRates,,US30Y,Rates,Interest Rates,US Treasuries,FRED,US 30Y Treasury Yield
+vix,VIXCLS,,general_volatility_db.Volatility,,VIX,Volatility,Equity Volatility,Equity Volatility,FRED,CBOE Volatility Index
+sp_vix_3m,VXVCLS,,general_volatility_db.Volatility,,S&P VIX 3M,Volatility,Equity Volatility,Equity Volatility,FRED,CBOE S&P 500 3-Month Volatility Index
+nasdaq_100_vix,VXNCLS,,general_volatility_db.Volatility,,Nasdaq 100 VIX,Volatility,Equity Volatility,Equity Volatility,FRED,US 6M Treasury Yield
+russell_2k_vix,RVXCLS,,general_volatility_db.Volatility,,Russell 2K VIX,Volatility,Equity Volatility,Equity Volatility,FRED,CBOE Russell 2000 Volatility Index
+dow_jones_ia_vix,VXDCLS,,general_volatility_db.Volatility,,Dow Jones Ia VIX,Volatility,Equity Volatility,Equity Volatility,FRED,CBOE DJIA Volatility Index
+move_index,,^MOVE,general_volatility_db.Volatility,,Move Index,Volatility,Bonds Volatility,Bonds Volatility,Yahoo Finance,Merrill Option Volatility Estimate Index
+us_hy_oas,BAMLH0A0HYM2,,general_rates_db.CreditSpreads,,High Yield OAS,Rates,Credit Spreads,High Yield,FRED,ICE US High Yield Index Option-Adjusted Spread
+us_corp_oas,BAMLC0A0CM,,general_rates_db.CreditSpreads,,Corporate OAS,Rates,Credit Spreads,Corporate Bonds,FRED,ICE US Corporate Index Option-Adjusted Spread
+us_mortgage_30yr,MORTGAGE30US,,general_borrowing_db.MortgageRates,,Mortgage 30YR,Borrowing Costs,Mortgage Rates,US,FRED,30-Year Fixed Rate Mortgage Average in the United States
+us_mortgage_15yr,MORTGAGE15US,,general_borrowing_db.MortgageRates,,Mortgage 15YR,Borrowing Costs,Mortgage Rates,US,FRED,15-Year Fixed Rate Mortgage Average in the United States
